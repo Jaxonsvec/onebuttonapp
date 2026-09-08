@@ -19,7 +19,6 @@ jobs:
 build_and_release:
 runs-on: ubuntu-latest
 
-```
 steps:
   - name: 📂 Checkout code
     uses: actions/checkout@v6
@@ -56,4 +55,3 @@ steps:
     run: |
       mkdir -p artifacts
       cp build/app/outputs/flutter-apk/*.apk artifacts/
-```
