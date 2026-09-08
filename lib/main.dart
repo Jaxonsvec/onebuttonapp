@@ -1,23 +1,23 @@
-
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(const ButtonApp());
+  runApp(const MyApp());
 }
 
-class ButtonApp extends StatelessWidget {
-  const ButtonApp({super.key});
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
+        appBar: AppBar(
+          title: const Text('One Button App'),
+        ),
         body: Center(
           child: ElevatedButton(
-            onPressed: () {
-              // Does nothing
-            },
+            onPressed: () {},
             child: const Text('Button'),
           ),
         ),
@@ -25,4 +25,3 @@ class ButtonApp extends StatelessWidget {
     );
   }
 }
-
